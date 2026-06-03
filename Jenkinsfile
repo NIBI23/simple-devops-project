@@ -5,7 +5,8 @@ pipeline {
 
         stage('Git Clone') {
             steps {
-                git 'https://github.com/NIBI23/simple-devops-project.git'
+		git branch: 'main',
+                    url:'https://github.com/NIBI23/simple-devops-project.git'
             }
         }
 
